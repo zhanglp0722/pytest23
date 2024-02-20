@@ -2,7 +2,7 @@ import os
 import pytest
 
 def test_aa():
-    print("test")
+    print("这是输出内容：test。。。。。")
 #步骤1： 通过Pytest生成测试报告数据文件，这里带有--alluredir参数 ，生成的数据文件目录为allure-result中
 pytest.main(['-s', '-v', '{test_aa}', '--alluredir', 'allure-results'])
 # 步骤2 ： 通过allure 读取数据源生成测试报告
